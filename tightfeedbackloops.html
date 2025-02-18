@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian Lui's blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Brian Lui's blog</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="whatsthis.html">What's This?</a> |
+            <a href="now.html">Now</a> |
+            <a href="books.html">Books</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2 class="article-title">Beware of tight feedback loops</h2>
+            <div class="article-date">May 10, 2020</div>
+            <div class="article-content">
+                <h4>The problem with fast, accurate data</h4>
+                <img src="images/tightfeedbackloops_fragile.png" alt="Fragile feedback loops">
+                
+                <blockquote>
+                    <em>A martial arts student went to his teacher and said earnestly, "I am devoted to studying your martial system. How long will it take me to master it?" The teacher's reply was casual, "Ten years." Impatiently, the student answered, "But I want to master it faster than that. I will work very hard. I will practice everyday, ten or more hours a day if I have to. How long will it take then?" The teacher thought for a moment, "20 years."</em>
+                </blockquote>
+
+                <p>A feedback loop is a process which loops back on itself and continues indefinitely. For example, Assess-Plan-Implement-Evaluate (<a href="https://www.nursetheory.com/adpie/">ADPIE</a>) is a system used in healthcare to treat patients. The patient is assessed and diagnosed, a doctor comes up with a treatment plan, nurses implement the plan, and the patient is then evaluated. The results of the evaluation are fed back into the Assess part of the loop, and the cycle begins anew.</p>
+
+                <p>Feedback loops vary in their accuracy. Accurate feedback means that it <strong>reliably</strong> tells you when you do something right. An example of an accurate feedback loop would be a high school math test. If Bob gets the quadratic formula wrong, the teacher can see it and remind him of the right formula. Bob now knows what to do next time.</p>
+
+                <p>An inaccurate feedback loop would be something like a novice bowler without a coach. The bowler will sometimes throw the ball into the gutter and sometimes get a strike, but his results are mostly the result of luck. Getting a strike or a gutter doesn't say much about whether the bowler's form is improving. An inaccurate feedback loop means that the results of the evaluation phase are "<strong>noisy</strong>" and contain significant variance, so the next assessment cycle will need to take that into account.<sup><a href="#fn1" id="ref1" class="footnote-ref">[1]</a></sup></p>
+
+                <p>Loops can also be <strong>fast</strong> or <strong>slow</strong>. If a decision takes years to play out, it'll be much tougher to draw meaningful conclusions within a short period of time. The math test is fast, because you get feedback a few minutes after you finish the test. So is the novice bowler, who receives his score seconds after throwing the ball. A slow loop is something like building a space rocket. This is a complex undertaking that needs years to bear fruit, and you only know whether your rocket works on launch day. Deciding to invade Iraq is another example.</p>
+
+                <p>This gives us a 2 by 2 of feedback loops:</p>
+
+                <img src="images/tightfeedbackloops_2by2.png" alt="Feedback loop matrix" class="aligncenter">
+                
+                <h2>Tight feedback loops</h2>
+
+                <p>A <strong>tight</strong> feedback loop means that feedback about the results of your choices are both <strong>accurate and fast</strong> - in the above matrix, it's the math test.</p>
+
+                <p>The shorter and more accurate the feedback loop, the easier it is to learn. A key goal of process improvements is to shorten the loop and provide more feedback to the user at regular intervals. Business advice constantly bangs this drum. Look at all this praise for tight loops:</p>
+
+                <blockquote>
+                    <em>"It's funny how many things in business are improved by the meta-advice "tighten your feedback loops."</em> (<a href="https://twitter.com/patio11/status/1110300596916019201">Patrick McKenzie</a>)
+                </blockquote>
+
+                <blockquote>
+                    <em>"The better your feedback loop, the better your work."</em> (<a href="https://twitter.com/naval/status/1142518247985569792">Naval Ravikant</a>)
+                </blockquote>
+
+                <blockquote>
+                    <em>"How can we accelerate personal feedback loops? Many problems in life can be fixed with a tight feedback loop."</em> (<a href="https://twitter.com/david_perell/status/1068606845185490944">David Perell</a>)
+                </blockquote>
+
+                <p>Tight feedback loops are good in <strong>gentle environments</strong>. An example of a gentle environment is software development. Outcomes are clearly specified, frameworks are common and work well, and your actions receive instant and accurate feedback.</p>
+
+                <p>But the real question is whether we should try to tighten the feedback loops in our lives, or try to improve our ability to learn from looser feedback loops. This depends on how easy it is to improve feedback loops, and how easy it is to learn from noisier data.</p>
+
+                <h2>Quantify at your own risk</h2>
+
+                <p>Productivity and self-improvement gurus focus on improving feedback loops. This often involves quantifying everything. We absorb this way of thinking starting in high school. High school science rubrics put qualitative analysis on a lower level of achievement, while quantitative analysis is at a <a href="https://www.gov.uk/government/publications/grade-descriptors-for-gcses-graded-9-to-1">higher level of achievement</a>.</p>
+
+                <p>Unfortunately, real life situations where quantification is useful tend to be trivial or routine, and thus vulnerable to automation. That's because the benefit of numbers is that they improve accuracy. Accuracy is more useful in entry-level jobs and for novices, because as skill increases, quantification of skill becomes harder. Skills that are easy to quantify are easy to systematize and learn.</p>
+
+                <p>When quantifying things, people naturally focus on things that can easily be measured. Measuring the final result doesn't provide enough quantitative data, so it's tempting to include the data from intermediate steps. This is an attempt to shorten the feedback loop, and trying to shorten feedback loops is very dangerous in complex systems.</p>
+
+                <p>Changing a process so that feedback arrives more quickly is alluring, because it provides an immediate boost to results. People are buoyed by this "improvement", and sing the praises of their new system. Sadly, they'll find that a few months later, things are worse than when they started.</p>
+
+                <p>This is because feedback loops which are too short for the overall system makes people focus on inappropriate intermediate goals. It's the main cause of catastrophic long term strategic mistakes.</p>
+
+                <p>In the business world, for example, it led to the <a href="https://www.perell.com/blog/boeing-737-max">comprehensive failure of the Boeing 737 Max</a>, and the loss of a reputation for quality built over decades.</p>
+
+                <h2>Why doesn't fast, accurate feedback lead to better learning?</h2>
+
+                <p>Tight feedback loops are seductive because they give us the feeling of rapid improvement. This can be as addictive as any drug. And it's true that in the early stages of learning a craft, tight feedback loops do help us improve quickly. When we're getting the hang of things, we make major mistakes, so feedback helps us correct course.</p>
+
+                <p>But after achieving proficiency in a field, tight feedback loops are useless. That's because initially, the learning environment is gentle. The path is well-travelled, there are easily accessible guides, things work according to common sense. As we become proficient, the environment becomes harsher, with noisier feedback. Improving is not as easy. At higher levels of skill, further progression depends on self-learning, on discovering or inventing new practices and knowledge. As skill increases, the gap between optimizing for metrics and optimizing for mastery widens.</p>
+
+                <img src="images/tightfeedbackloops_difficulty.png" alt="Learning difficulty and environment" class="aligncenter">
+
+                <p>This is also why people tend to flit around from field to field. As soon as they exhaust the easy gains, they look for a learner's high elsewhere. This feeds their addiction, but doesn't lead to learning any useful skills.</p>
+
+                <p>Focusing on tight feedback also leads to getting stuck in <a href="https://twitter.com/Altimor/status/1148378374668087296">local maxima</a>. The short turnaround time leads to the pursuit of incremental improvements. Accurate feedback reduces error, but this means reaching and staying at the local maximum. The more accurate and more rapid the loop, the more quickly you'll arrive at the top of the hill - and the less chance you have of leaving it to climb the mountains of mastery.<sup><a href="#fn2" id="ref2" class="footnote-ref">[2]</a></sup></p>
+
+                <img src="images/tightfeedbackloops_tightfeedbackloop.png" alt="Tight feedback loop convergence" class="aligncenter">
+
+                <p>But this doesn't happen when the feedback is more sporadic:</p>
+
+                <img src="images/tightfeedbackloops_loosefeedbackloop.gif" alt="Loose feedback loop exploration" class="aligncenter">
+
+                <h2>Beating the stock market</h2>
+
+                <p>Trying to make loops more accurate is often meaningless, and trying to make loops shorter is dangerous. The alternative: how easy is it to learn from noisy data?</p>
+
+                <p>It's much easier than trying to tighten feedback loops.</p>
+
+                <p>I was previously an <a href="https://corporatefinanceinstitute.com/resources/careers/jobs/buy-side-analyst/">equity research analyst</a> at a <a href="https://www.investopedia.com/terms/v/valueinvesting.asp">value investment</a> fund. I researched publicly traded companies, looking for ones with underappreciated prospects. The only way to measure results is stock price movement. This is extraordinarily noisy, because stock prices can fluctuate for hundreds of reasons unrelated to company value. The feedback cycle is measured in years, because that's how long it takes for an investment thesis to play out. Research shows that even a 10 year period of outperformance is <a href="https://www.etf.com/sections/index-investor-corner/swedroe-sorting-luck-skill?nopaging=1">likely due to luck, not skill</a>, because the impact of random noise far outweighs investment acumen.</p>
+
+                <p>It's a difficult game to play, with <a href="https://www.ifa.com/articles/despite_brief_reprieve_2018_spiva_report_reveals_active_funds_fail_dent_indexing_lead_-_works/">90% of funds underperforming</a> the benchmark.<sup><a href="#fn3" id="ref3" class="footnote-ref">[3]</a></sup> I was fortunate to have produced market-beating performance over two decades. People smarter and harder-working than me consistently underperform the market, defeated by the randomness of their profit and loss. They feel invincible when they have a good year and crushed when they have a bad year. Stock picking is a harsh environment!</p>
+                
+                <p>I learned how to improve my investment process by working with a loose feedback loop, but they insisted on trying to tighten the feedback loop.</p>
+
+                <h2>How to learn in noisy environments</h2>
+
+                <p>Here's the standard feedback loop:</p>
+
+                <img src="images/tightfeedbackloops_accuratefeedbackloop.png" alt="Standard feedback loop" class="aligncenter">
+
+                <p>But <strong>when data is noisy, this feedback loop is worthless</strong>. We cannot use this output as an input into our loop, it'll lead to wrong results!</p>
+
+                <img src="images/tightfeedbackloops_inaccuratefeedback.png" alt="Inaccurate feedback loop" class="aligncenter">
+
+                <p>Instead, we use this loop, which works well in harsh environments with noisy feedback:</p>
+
+                <img src="images/tightfeedbackloops_worldconstruction.png" alt="World construction approach" class="aligncenter">
+
+                <p>Learning under conditions of noisy data starts with world construction. Imagine a possible future, and repeat this to generate hundreds of possible future worlds. The main skills and resources required are creativity, <a href="https://thezvi.wordpress.com/2017/09/30/slack/">slack</a>, and <a href="https://en.wikipedia.org/wiki/Equanimity">equanimity</a>. Creativity leads to a higher rate of idea generation and slack gives us more time to generate ideas. Equanimity is important because it allows us to persevere in the absence of tangible feedback.</p>
+
+                <p>Next, we eliminate some incorrect worlds by testing them against noisy data. This data should come from intermediate steps and can't be quantified. If the data conflicts with an imagined future, that future is unlikely to occur. <strong>Noisy information may be bad for feedback loops, but it's great for elimination</strong>, because the wider range of outcomes is more effective for pruning. It may even be a bit faster than accurate data, since the variance of accurate data is lower!</p>
+
+                <p>As we near decision time, we stop the world construction and elimination, and use judgment and experience to pick the best idea out of the remaining ones. Process improvement happens by creating many parallel processes and discarding the ones that are unfit, not by iteratively improving a single process.</p>
+
+                <h2>Analyzing a stock</h2>
+
+                <p>I once considered investing into a Japanese <a href="https://en.wikipedia.org/wiki/Pachinko">pachinko</a> company. Pachinko is a type of quasi-legal gambling using pinball machines. I thought of some possible futures. What if young people all play mobile gaming, so only the elderly go to pachinko parlors? What if legalized casinos compete with pachinko? What if they can export this gaming to other countries? What if gangsters interfere in this lucrative gambling business? What if people have less income, will they give up pachinko as discretionary spending? What if land values rise? What if urbanization depopulates their customer base? What if the Japanese government introduces more regulation? What if trade problems make it harder to get the components for the machines? What if improvements in software development make it cheaper to update the games? What if pachinko moves online? What if taxation increases because the government needs money? What if cultural trends affect the propensity of people to visit pachinko parlors? What if pachinko becomes a tourist attraction? What if the parlors merge into larger units, or fragment into smaller ones? What if large pachinko chains have economies of scale? What if ancillary services become more attractive? What if family-friendly pachinko machines attract a new type of customer?</p>
+
+                <p>Then, I went through and answered these questions. Many of them were easy to answer by searching online or talking with people. For example, legalized casinos would open more than a decade later, too distant to affect valuations, so I ignored it.</p>
+
+                <p>I had only one choice to make - whether to invest in the company or not - and concluded that buying it would be profitable. Investment is a binary decision, but this process also works well for situations with many possible paths forward.</p>
+
+                <p>After investing in the company, I did <strong>not</strong> use subsequent stock price performance to inform my decision making. I stuck with the process and treated the stock price as just one piece of information I could use to validate future hypotheses.<sup><a href="#fn4" id="ref4" class="footnote-ref">[4]</a></sup></p>
+
+                <h2>Improvement</h2>
+
+                <p>We improve at this process by becoming <strong>more creative, having more slack, being more equanimous, and pruning more efficiently</strong>.</p>
+
+                <p>Creativity is a function of being well-read and having exposed to a variety of stimuli. Reading different sorts of books, blogs, novels, and primers will help. Exploring new places and talking with different people also fills us with more concepts and ideas to draw from.</p>
+
+                <p>We gain slack by being emotionally, physically, socially, and financially secure. This is a long-term project. Slack may be the most difficult factor to improve, because it is a reflection of our life circumstances. That said, discarding low priority tasks and chores can free up time and mental energy.</p>
+
+                <p>Equanimity can be improved by <a href="brainrewiring.html">brain rewiring</a>. Otherwise, it seems to be an immutable personality trait.</p>
+
+                <p>Pruning - the rapid discarding of invalid hypotheses - can be improved by being more discerning. Discernment requires much reading, focused on history and biographies, and effortful conversation with intelligent people. This shows us how other people wrestle with difficult topics. History gives us more ways to judge the validity of a hypothesis. Reading biographies and talking with intelligent, informed people lead to new ways of thinking.</p>
+
+                <h2>Life-altering decisions are noisy</h2>
+
+                <p>Reversible actions can be stopped if they turn out to be bad, and tend to work well with tight feedback loops. Irreversible decisions tend to have a long lag time from decision to feedback, and are often more consequential. They must be dealt with using the noisy feedback toolset.</p>
+
+                <p>The most important decisions in life are irreversible. What career path should I embark upon? Should I emigrate to another country? Who should I marry? What should my core values be? What is good in life? What people should be my lifelong friends?</p>
+
+                <p>Because these decisions are so important, improving our ability to learn in noisy feedback environments has more impact on our life than tightening feedback loops.</p>
+
+                <h2>Personality</h2>
+
+                <p>Some people naturally prefer feedback loop optimization, while others want to learn better in noise.</p>
+
+                <p>In my experience, people who like tight feedback loops tend to</p>
+                <ul>
+                    <li>Be highly organized</li>
+                    <li>Be "<a href="https://en.wikipedia.org/wiki/Type_A_and_Type_B_personality_theory">Type A</a>"</li>
+                    <li>Have high stamina/energy</li>
+                    <li>Have forceful personalities</li>
+                    <li>Like impractical rationality (e.g. <a href="https://wiki.lesswrong.com/wiki/Rationality:_From_AI_to_Zombies">the Sequences</a>, <a href="https://www.iep.utm.edu/util-a-r/">utilitarianism</a>)</li>
+                </ul>
+
+                <p>People who are good at learning in noise tend to</p>
+                <ul>
+                    <li>Be highly creative</li>
+                    <li>Be "Type B"</li>
+                    <li>Be high in 'openness to experience'</li>
+                    <li>Like applied rationality (e.g. meditation, <a href="dimensionaldecoupling.html">3D thinking</a>)</li>
+                </ul>
+
+                <p>Fortunately, it's possible to be good at both of these skills. The biggest roadblock is that most people think it's impossible to use noisy feedback!</p>
+
+                <h2>Be water</h2>
+
+                <blockquote>
+                    <em>"You must be shapeless, formless, like water. When you pour water in a cup, it becomes the cup. When you pour water in a bottle, it becomes the bottle. When you pour water in a teapot, it becomes the teapot. Water can drip and it can crash. Become like water my friend." - Bruce Lee</em>
+                </blockquote>
+
+                <p>People who can learn in noisy, harsh environments can also learn well in gentle environments. The reverse is not true. Techniques used to optimize efficiency in gentle environments are fragile. Learning to deal with loose feedback loops makes us resilient.</p>
+
+                <p>Do you want to be great at quickly reaching a mediocre level, and being efficient? Or is it better to achieve mastery and be good at making big decisions?</p>
+
+                <hr>
+
+                <div class="footnotes">
+                    <p id="fn1"><a href="#ref1" class="footnote-backref">1 ↩</a> In technical language, inaccurate feedback has too many confounders to be able to easily establish a cause-effect relationship between the action and the feedback.</p>
+                    <p id="fn2"><a href="#ref2" class="footnote-backref">2 ↩</a> One way of dealing with this is the explore/exploit algorithm, which sets a schedule for attempting to leave the local maximum. This bypasses the tight feedback loop temporarily. But without the ability to effectively learn in noisy situations, it's likely to settle again on the local maximum.</p>
+                    <p id="fn3"><a href="#ref3" class="footnote-backref">3 ↩</a> Fund performance is compared against a benchmark. A benchmark is the result obtained by buying every stock that the fund's strategy allows. This is a "no-brainer" strategy known as indexing, and is easy to execute. If a fund can't beat its benchmark, the investor should avoid it and buy the benchmark instead.</p>
+                    <p id="fn4"><a href="#ref4" class="footnote-backref">4 ↩</a> Don't copy this process for your own investing! It doesn't work in all markets and it doesn't work with all stocks.</p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        Thanks for reading my blog!
+    </footer>
+</body>
+</html>
