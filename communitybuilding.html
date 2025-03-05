@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian Lui's blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Brian Lui's blog</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="whatsthis.html">What's This?</a> |
+            <a href="now.html">Now</a> |
+            <a href="books.html">Books</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2 class="article-title">Community building in a forgotten game</h2>
+            <div class="article-date">October 29, 2019</div>
+            <div class="article-content">
+                <img src="images/starbreak_header.png" alt="Starbreak game header" class="aligncenter">
+
+                <p>Building good communities is hard. It's easy to underestimate the benefits of a hostile environment.</p>
+
+                <p>I realized this while playing <a href="https://www.starbreak.com/">Starbreak</a>, a <a href="https://en.wikipedia.org/wiki/Metroidvania">Metroidvania</a> platforming game. Starbreak is cooperative and <a href="https://en.wikipedia.org/wiki/Massively_multiplayer_online_game">massively-multiplayer</a>. It's also totally free<sup><a href="#fn1" id="ref1" class="footnote-ref">[1]</a></sup>, with no in-game purchases or advertisements.</p>
+
+                <p>Modern video games are sterile, meaning that player actions do not significantly affect the game. <a href="https://king.com/game/candycrush">Candy Crush</a> is a good example. Success is due to luck, so a skilled player progresses at the same rate as everyone else. The primary determinant of player power is the amount of time spent playing.</p>
+
+                <p>Starbreak swims gloriously against this current. It's <strong>permadeath</strong>, meaning that once your character dies, it is gone forever. And it's easy to die in this game, with instant deaths and enemies that kill in two or three hits.</p>
+
+                <img src="images/starbreak_polaris.gif" alt="Polaris instant death" class="aligncenter">
+                <h5 class="caption">Getting hit by the big mouth is an instant death. So is falling off the map. Most players can expect to die once every few hours of play.</h5>
+
+                <p>Here are some of its notable design decisions, and how they feed into its amicable community spirit.</p>
+
+                <h3>The Silent Contract</h3>
+
+                <p>There is not much chatting in Starbreak. It's rare for people to chat or to give directions or advice to other players during missions, because taking your fingers off the controls to chat is dangerous. These norms of silence carry over into the main lobby. Most chat is game-related, such as people getting a group together to do a particular mission. Whatever it is that makes the community so good, it's not the amount of socializing.</p>
+
+                <p>Despite this lack of chatting, Starbreak is extremely welcoming to new players, and people are cooperative and prosocial. There's a Chinese word, <a href="https://forvo.com/word/%E9%BB%98%E5%A5%91/#zh">默契</a>,<sup><a href="#fn2" id="ref2" class="footnote-ref">[2]</a></sup> which means "silent contract". It describes a happy situation where a group of people know each other well enough that they are able to cooperate towards a common goal without any overt communication. Teamwork happens through tacit understanding and familiarity with the missions. The constraint of no chatting in-mission leads to better cooperation, like visually impaired people having more sensitive touch and hearing.</p>
+
+                <img src="images/starbreak_silentcontract.gif" alt="Silent contract in action" class="aligncenter">
+                <h5 class="caption">Preparations for the hardest boss fight in the game. Wildfires (soldiers) lay landmines, Fabricators (robots) place turrets, Ironclads (shield guys) defend the team with their shields.</h5>
+
+                <h3>Rebuilding With Altruism, Rebuilding With Extra Altruism</h3>
+
+                <p>Rebuilding after a death involves finding new equipment and regaining lost stats. There's no equipment trading, so equipment is only obtained by completing missions. To get stats, people usually run missions of increasing difficulty. After getting all stat boots from Tier 1 missions, the player would then do Tier 2 missions until those stats were complete, and then move on to higher tiers. While it's possible to immediately do the highest tier missions, this is too dangerous without having the stats from lower tiers.</p>
+
+                <p>Rebuilding stats like this takes a long time, and players have come up with ways of speeding things up. The first way is ask people for help "rebuilding". A friendly helper will log on to a powerful maxed out character and help you through the missions tier by tier. This makes it much safer for you because you can stay behind and collect the stat boosts safely.</p>
+
+                <img src="images/starbreak_statleeching.png" alt="Stat leeching example" class="aligncenter">
+                <h5 class="caption">My character recently died and needs stats, especially MAX HP, SPEED, and CRIT X. I can run Tier 3, 4, or 5 missions. Currently I'm following behind a small group as they clear enemies to the right of me, and I'll pick up the stats that drop from the enemies. The blue rectangular icon on HomeNoobAss's character is a JUMP stat boost.</h5>
+
+                <p>The second way is even more remarkable. There are "secrets" which offer a large amount of stat boosts within a hidden room, often enough to gain half a tier of stats. Secrets are hard to find, and only appear 15% of the time in a mission.</p>
+
+                <p>There are two versions of the Starbreak game software, desktop Steam and web browser. The Steam version comes with the "Starbreak Plugin Engine" that can automatically detect and highlight secrets. One of the Tier 4 missions, Graveyard, can be rushed by fully powered characters to check for secrets in a minute or two. (Other missions need at least 8 minutes because of their linear map layout.)</p>
+
+                <p>The browser version has a bug that will create large amounts of stat boosts in a secret, usually enough to fill up a new character all the way to Tier 4. But it can't detect secrets because the plugin doesn't work on browser. So, what's a rebuilder to do? This is what players have come up with:</p>
+                <ol>
+                    <li>A strong group of players using the plugin engine repeatedly run Graveyard missions and rush to check for secrets.</li>
+                    <li>Once they find a secret, they get a friend to broadcast this into the main lobby.</li>
+                    <li>People who need to rebuild then enter the mission on browser and use the bug to rebuild.</li>
+                </ol>
+
+                <p>The strong players checking for secrets don't receive any reward for this. As far as I can tell, they do it because everyone's experienced the pain of losing a strong character, and it feels nice to help people recover from that.</p>
+
+                <h3>No Leeching</h3>
+
+                <p>Another example of prosociality deals with "leeching", a gaming term for people who grab goodies without contributing anything to a team effort. In Starbreak, every player gets their own copy of all loot drops, no matter who dealt the finishing blow. This means that the optimal way to build up your character is to stay behind the front lines, moving forward to pick up loot only when other people have cleared the map. It's considered acceptable to do when rebuilding, but frowned upon for leveled up characters who are expected to help the team.</p>
+
+                <img src="images/starbreak_notleeching.png" alt="Not leeching example" class="aligncenter">
+                <h5 class="caption">This player isn't shielding teammates as well as he could. His counterargument is to admit that he might be playing badly, but at least he's not leeching!</h5>
+
+                <p>Leeching is rare. The only reason people will stay behind leeching is if they're low on health and are waiting for health packs. Otherwise, everyone will be rushing to the front, eager to clear the map, even though this increases their chance of death. Playing aggressively is fun, but this isn't enough to make up for the massive downside of possible death.</p>
+
+                <p>I think the main reason is prestige. Playing bravely increases your chance of getting a "callout".</p>
+
+                <img src="images/starbreak_callout.png" alt="Callout example" class="aligncenter">
+                <h5 class="caption">This group has just defeated the boss of the Vanquished mission. The bottom left corner sends a game-wide callout notification saying that "ChrunchyFuck gave an impressive performance", meaning that he contributed the most to the boss fight.<sup><a href="#fn3" id="ref3" class="footnote-ref">[3]</a></sup></h5>
+
+                <p>Callouts provide no in-game benefits, but everyone sees them in the text window. Getting callout on a high tier mission is a mark of skill. Over time, players absorb the callout notifications and know which players are capable of handling the toughest missions.</p>
+
+                <p>To increase the chances of getting callout, people are even willing to put on equipment that lowers their defense in return for a big offensive boost! In a permadeath game, survival is more important than offense, so this is a serious sacrifice.</p>
+
+                <img src="images/starbreak_frenzied.png" alt="Frenzied Berserker equipment" class="aligncenter">
+                <h5 class="caption">The Frenzied Berserker doubles your damage, at the cost of a significant armor penalty. The armor penalty is more severe than it appears, because the Frenzied Berserker takes the place of standard body armor.</h5>
+
+                <p>Prestige provides community respect, recognition as a skilled player, and influence. Top players are able to "host" missions: because people trust them to play well, they're able to start whatever missions they want to do, and others will join in. This solves the coordination problem of getting enough people to ensure a successful mission. This prestige is also <a href="https://corporatefinanceinstitute.com/resources/knowledge/economics/non-rivalrous-goods/">non-rivalrous</a>, because having more people able to host missions benefits everyone.</p>
+
+                <h3>Prosocial Mission Hosting</h3>
+
+                <p>When expert players host missions, they do so prosocially. Anyone can open a new portal to a mission. A typical mission consists of around 3-5 regular rooms, a mid-boss, 2-3 more rooms, and then the boss. Regular rooms are easy but maps are often large and take time to traverse. Mid-bosses take significant amounts of time to complete, and bosses are the hardest. The boss drops the best items, and typically people are only interested in loot from the boss.</p>
+
+                <p>Portals close eight minutes after opening. An expert player can "rush", getting through rooms and mid-bosses quickly to reach the boss room. The rusher doesn't have access to the lobby chat, since he's in a mission. Instead, he messages someone in the lobby, who is the designated "caller". The caller will broadcast that the portal is ready, and people will enter the portal and instantly arrive at the boss room.</p>
+
+                <p>The rusher takes some risk by going through the map quickly, skipping enemies and leaving himself open. He also spends more time in the mission than the people who join, yet he doesn't receive any extra reward. Some particularly generous players will rush to the boss, let people join the mission, and then leave, forfeiting the chance for boss loot. They'll then open another portal and rush to the boss again. That way, when the original mission has been defeated, players can immediately join the next mission at the boss! This level of altruism is unheard of in other multiplayer games.</p>
+
+                <h3>Why Is Starbreak So Friendly?</h3>
+
+                <p>I'm interested in the game design characteristics that lead to such a prosocial community, and whether we can use these principles when building communities elsewhere. Five of them stand out.</p>
+
+                <p><strong>Ability is legible.</strong> A skilled player gets frequent callouts, clears maps quickly, and rushes missions for others. If you die, it was because of your mistakes, you can't blame other people's mistakes for your deaths<sup><a href="#fn4" id="ref4" class="footnote-ref">[4]</a></sup>. Compare this to <a href="https://en.wikipedia.org/wiki/Multiplayer_online_battle_arena">MOBAs</a> such as League of Legends, where you play in a team of five. In these games, it's easy to deflect blame for losses onto the mistakes of other people on your team, which leads to a toxic environment.</p>
+
+                <p><strong>Barriers to communication</strong> encourage cooperation. The difficulty of communicating with teammates during a mission means that everyone feels a responsibility to do their part. A real-world parallel is the Hong Kong protest movement. The Hong Kong government aggressively <a href="https://en.wikipedia.org/wiki/2017_imprisonment_of_Hong_Kong_democracy_activists">jails protest leaders</a>, leading to a leaderless movement and communication difficulties. Protesters have still been effective and they display high solidarity. Compare this to the <a href="https://en.wikipedia.org/wiki/2014_Hong_Kong_protests">Umbrella Movement</a>, where too much communication and debate led to arguments and factional splits, causing the protests to dissipate.</p>
+
+                <p><strong>Permadeath is brutal.</strong> A moment's inattention can wipe out dozens of hours of patient play. Combined with the difficulty of the missions, this creates a harsh environment for players. This leads to players directing their frustration towards the game and its 'unfair' challenges, instead of towards other players. Players band together to survive the harsh environment, and this provides fertile ground for prosocial norms to take root.</p>
+
+                <p><strong>No visible game-awarded prizes</strong> means that most prestige comes from recognition by others. It's not very noticeable whether someone is using bad equipment or has the best items in the game. There's no leaderboard or level indicator. Players gain status by being altruistic and providing useful services for the community. People don't compete to climb to the top of the ladder, they compete to help everyone else.</p>
+
+                <p><strong>Prestige is non-rivalrous.</strong> In other games, other good players are a threat because status relations are zero-sum. In Starbreak, because of its cooperative nature, prestige is positive sum.</p>
+
+                <p>I wonder if this is the appeal of many science fiction settings such as the bleak desert environment in the <a href="https://wottaread.com/how-to-read-dune-series-by-frank-herbert/">Dune</a> series, the dystopian cyberpunk world of <a href="https://en.wikipedia.org/wiki/Sprawl_trilogy">Neuromancer</a>, and <a href="https://en.wikipedia.org/wiki/The_Walking_Dead_(video_game)">zombie apocalypses</a>. Do social spaces need a certain amount of inherent menace? And is this why communities that seem complacent on the outside turn out to be so mean?</p>
+
+                <h3>Play!</h3>
+
+                <p>Check out Starbreak on <a href="https://www.starbreak.com">browser</a> or <a href="https://store.steampowered.com/app/420790/StarBreak/">Steam</a>! The plugin engine for steam is <a href="https://github.com/atomizer/sbpe">here</a>.</p>
+
+                <img src="images/starbreak_brob.png" alt="Friend me in Starbreak" class="aligncenter">
+                <h5 class="caption">Type "/friend Brob" to be notified when I'm online. I'm happy to help you learn the ropes!</h5>
+
+                <hr>
+
+                <div class="footnotes">
+                    <p id="fn1"><a href="#ref1" class="footnote-backref">1 ↩</a> After a bit of internet sleuthing, I pieced together a summary of why the game is free. Alex Carobus and Rob Shillingsburg first created <a href="https://www.realmofthemadgod.com/">Realm of the Mad God</a>, a predecessor to Starbreak with an <a href="https://en.wikipedia.org/wiki/Pixel_art">8-bit</a> art style. Like Starbreak, it was cooperative and massively-multiplayer, and gained a sizable cult following. For his next project, Alex decided to create a <a href="https://en.wikipedia.org/wiki/Fifth_generation_of_video_game_consoles">32-bit</a> version of Realm of the Mad God, this time in a Sci-Fi setting, and thus Starbreak was born. Alex feels very strongly about <a href="https://medium.com/@chris_cobb/video-game-monetization-strategies-715d78e80fa0">ethical monetization in games</a>, and the only revenue sources in Starbreak were buying player cosmetics and convenience. Starbreak went into open beta in 2015, but unfortunately never had enough players for further development to make financial sense. Eventually, Alex removed the ability to pay and made the game completely free.</p>
+                    <p id="fn2"><a href="#ref2" class="footnote-backref">2 ↩</a> 默契 is <em>mak6 kai3</em> in <a href="http://www.cantonese.sheik.co.uk/essays/jyutping.htm">Jyutping</a> and <em>mo4 qi4</em> in <a href="http://www.meetmandarin.com/articles/chinese-pronunciation-guide.html">Pinyin</a>.</p>
+                    <p id="fn3"><a href="#ref3" class="footnote-backref">3 ↩</a> You may have noticed that honghung123 of Shut The FUCK UP and ChrunchyFuck have rather vulgar names. Shut The FUCK UP is a faction name, which fulfills the role of <a href="https://en.wikipedia.org/wiki/Video-gaming_clan">guilds</a> in multiplayer games. This is a rather amusing design choice; Starbreak filters out coarse language in chats, but not in character names or faction names.</p>
+                    <p id="fn4"><a href="#ref4" class="footnote-backref">4 ↩</a> A common death that occurs through no fault of your own is when you're disconnected during a mission. You still can't blame others for your death, but you can blame the internet.</p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        Thanks for reading my blog!
+    </footer>
+</body>
+</html>
