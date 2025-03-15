@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian Lui's blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Brian Lui's blog</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="whatsthis.html">What's This?</a> |
+            <a href="now.html">Now</a> |
+            <a href="books.html">Books</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2 class="article-title">Housing shortages</h2>
+            <div class="article-date">August 1, 2018</div>
+            <div class="article-content">
+                <blockquote>
+                    <em>"I don't know why they still building houses," Mr Biswas said. "Nobody don't want a house these days. They just want a coal barrel. One coal barrel for one person. Whenever a baby born just get another coal barrel. You wouldn't see any houses anywhere then. Just a yard with five or six coal barrels standing up in two or three rows."</em>
+                    <p>- V.S. Naipaul, A House for Mr Biswas</p>
+                </blockquote>
+
+                <p><strong>Housing supply is a problem in cities all over the world. What are good frameworks for understanding and solving it?</strong></p>
+
+                <h2 id="crisis">The housing crisis</h2>
+
+                <p>The price of housing in major cities around the world has been rising relentlessly in the past decades. Two of the major reasons are a prolonged period of <a href="https://obamawhitehouse.archives.gov/blog/2015/07/14/decline-long-term-interest-rates">low interest rates</a>, and agglomeration effects of being situated within a large city.</p>
+
+                <p>To <strong>understand</strong> the causes of high housing prices, an economics framework is necessary. Low interest rates mean that the cost of a mortgage is low, so people can afford to pay more to buy a house or apartment. For example, with mortgage rates at 6%, a monthly payment of $1,000 on a 30-year mortgage could pay for a $168,000 loan. At 3%, though, it could pay for a $237,000 loan, so the buyer can get a 40% more expensive property for the same monthly payment.</p>
+
+                <p>Secondly, <a href="http://www.nber.org/chapters/c7977.pdf">agglomeration effects</a> have been increasing, as the modern economy requires increasing specialization.<sup><a href="#fn1" id="ref1" class="footnote-ref">[1]</a></sup> Agglomeration economies are the benefits that come when firms and people locate near one another together in cities and industrial clusters. They enable increased specialization and higher rates of knowledge transfer.</p>
+
+                <p>These factors lead to an increase in demand for housing. High housing prices, by themselves, are not indicative of a housing crisis – we'd expect housing to be more expensive if it was more valuable. And in most areas of the United States there is no housing problem, with <a href="https://www.aeaweb.org/articles?id=10.1257/jep.32.1.3">housing costs roughly in line with construction costs</a>. The housing crisis in some cities is caused by restrictions on supply: these cities make it difficult to create new housing stock.</p>
+
+                <p>To <strong>tackle</strong> the housing crisis, an economics framework is necessary but not sufficient. The application of economic theory to housing supply has already been tried repeatedly, and if relying on economics was sufficient, we wouldn't be seeing so many problems. Instead, I think we can use the unconventional but interesting framework of international relations.</p>
+                
+                <h2 id="international">International relations</h2>
+                
+                <p>A <a href="https://internationalrelations.sfsu.edu/what-ir">realist</a> framework is useful because the constraint on housing in affected cities is almost never the cost of construction materials or availability of land. The constraint is the presence of stakeholders who are affected by new housing supply. Housing is not a physical or economic problem, it is a political problem. Therefore, it requires a political response.</p>
+
+                <p>The obvious cause is the existence of <a href="https://www.ft.com/content/243532f0-878e-11da-8762-0000779e2340">vested interests</a> (also known as interest groups), from the fields of economics and political economy.<sup><a href="#fn2" id="ref2" class="footnote-ref">[2]</a></sup> This is primarily the existing homeowners. They enjoy a direct benefit from high housing prices, because it makes their homes or apartments more valuable. They are incentivized to protect their high housing prices, which often form the majority of their savings. The elderly, especially, can spend large amounts of time and effort on <a href="https://missionlocal.org/2018/06/the-strange-and-terrible-saga-of-san-franciscos-historic-laundromat-represents-the-worst-of-planning-and-development-in-this-town/">lobbying</a>. The benefits of increased housing supply are spread over a large population and include those with no voice, such as people who would potentially move in if housing was cheaper. This means that a minority of people can prevent the majority from benefitting.</p>
+
+                <p>This explanation is correct, but how useful is it really? What actual solutions does this analysis suggest, except for overcoming vested interests with brute force, an approach which is both costly and comes with dangerous <a href="https://www.economist.com/special-report/2003/01/16/the-war-that-never-ends">side-effects</a>?</p>
+
+                <h2 id="bayarea">The Bay Area</h2>
+                
+                <p>Vested interests do block new housing construction, but this is neither a complete nor useful explanation. What we need is a deeper understanding of international relations.<sup><a href="#fn3" id="ref3" class="footnote-ref">[3]</a></sup> Here's an example of where the vested interests model doesn't show the full picture: the San Francisco Greater Bay Area.</p>
+
+                <img src="images/housingshortages_peninsula.png" alt="Map of the San Francisco Peninsula" class="alignnone">
+
+                <p>My friend, Bob (a pseudonym), lives in the Greater Bay Area and is puzzled by the lack of housing construction. He models the situation like this:</p>
+                
+                <blockquote>
+                    <em>There are 20 cities in the Peninsula. Each city can choose to build housing or not. If a city builds housing, the entire peninsula benefits, although the city that built the housing would benefit less than the others.</em>
+                </blockquote>
+                
+                <p>For example, a city that builds housing will <a href="http://www.latimes.com/politics/la-pol-ca-small-city-controls-big-housing-project-20170728-story.html">receive less state money</a> than if it built hotels or commercial properties<sup><a href="#fn4" id="ref4" class="footnote-ref">[4]</a></sup>, but cities elsewhere in the area benefit as it relieves the housing pressure on them.</p>
+
+                <p>Using <a href="https://en.wikipedia.org/wiki/Normal-form_game">game theory</a>, we can show the payoff diagrams like this:</p>
+
+                <img src="images/housingshortages_payoff1.png" alt="First payoff diagram" class="alignnone">
+
+                <p>With these payoffs, everyone benefits from increased housing. Any city can unilaterally choose to build housing even if other cities refuse, and get a payoff of +1 while other cities get +5. Based on these payoffs, Bob predicted that at least one city would build new housing.</p>
+
+                <p>However, I expected <strong>none</strong> of the cities to build significant amounts of housing. Bob thought this was because the vested interests were so strong in every single city that none of them could be overcome. But that wasn't the model I was using. I was thinking about another idea from international relations: relative gains<sup><a href="#fn5" id="ref5" class="footnote-ref">[5]</a></sup>.</p>
+                
+                <h2 id="relative">Relative gains</h2>
+                
+                <p>Relative gains means that instead of viewing the world as a positive-sum game, we view it as a zero sum game. If the Greeks and Persians are <a href="https://en.wikipedia.org/wiki/Greco-Persian_Wars">at war</a>, for example, then what matters isn't the absolute amount of power they each have, but their relative gains. If a new type of bow is invented with greater range and power, both the Greek and Persian armies will be stronger in an absolute sense. But in a relative sense, the Persians will be more powerful since their <a href="https://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1008&context=classicsfacpub">army composition</a> places <a href="https://legioilynx.com/2014/02/10/persian-archery-and-tactics/">more importance on archery</a>.<sup><a href="#fn6" id="ref6" class="footnote-ref">[6]</a></sup></p>
+
+                <p>In this type of situation, if one country gains power but the rest of the world gains more, that country has fallen behind. Actions which benefit you but benefit an enemy more can be fatal.</p>
+
+                <p>Because of the particulars of how power is devolved in this region, the cities in the Peninsula are locked in just this type of situation. For small changes in housing supply, relative changes matter more than absolute changes. A city that built housing would be less prosperous relative to the Bay Area region, because the other cities could free ride on the increased housing stock. This would lead to widespread dissatisfaction within that city, and opposition to further construction.</p>
+
+                <p>With this perspective, the payoff diagram looks like this:</p>
+
+                <img src="images/housingshortages_payoff2.png" alt="Second payoff diagram" class="alignnone">
+
+                <p>Any city that chooses to build would be hurting itself by getting a payoff of -2, while other cities would get +2. Even if every city chooses to build housing, no one gains anything at all. We'd expect the equilibrium to quickly settle into the bottom right quadrant.<sup><a href="#fn7" id="ref7" class="footnote-ref">[7]</a></sup> And indeed, in 2017 only one home was added for <a href="http://www.dof.ca.gov/Forecasting/Demographics/Estimates/E-5/">every four people</a> who moved to California, similar to the pattern in previous years.</p>
+                
+                <h2 id="built">Where housing does get built</h2>
+                
+                <p>This doesn't mean that the situation is hopeless. There are fast-growing cities in the world where sufficient housing does get built. These cities manage to deal with one or both of the problems of vested interests and relative gains.</p>
+
+                <p>In <strong>Tokyo</strong>, vested interests also exist, but housing gets built. The barriers to new housing is low, because land use zoning happens on a <a href="https://devonzuegel.com/post/north-american-vs-japanese-zoning">national level</a> instead of at the city level, removing a major reason for inter-city competition. The relative competition also happens at the national level, with a mindset of something like "we'll fall behind to China if we hamstring ourselves". Also, vested interests are less powerful due to high Japanese cultural homogeneity, which de-emphasizes individual benefit and emphasizes group interest.</p>
+
+                <p><strong>China</strong> has experienced unprecedented levels of rural-urban migration <a href="https://www.weforum.org/agenda/2016/06/china-cities-growing-numbers-are-stunning/">for decades</a>. Housing prices have <a href="https://helda.helsinki.fi/bof/bitstream/handle/123456789/14959/dp2117.pdf">risen over time</a>, but this is due to the relentless pace of urbanization and the concomitant demand for housing. On the supply side, large amounts of new housing are being created every day.</p>
+
+                <p>Both vested interests and relative competition are weak. The cost to homeowners of opposing new construction is high, because the government is suspicious of organized advocacy groups and local governments profit from property development. Therefore, vested interests can be effectively suppressed. As for relative competition, although implementation details are often decided at the city level, government policy is propagated top-down at the <a href="https://en.wikipedia.org/wiki/Administrative_divisions_of_China">prefecture level</a>, causing the competition to happen higher up.<sup><a href="#fn8" id="ref8" class="footnote-ref">[8]</a></sup></p>
+
+                <p><strong>Australia</strong> is another example of a successful approach to housing. True, looking at housing affordability wouldn't indicate this – Sydney and Melbourne are in the <a href="http://www.newgeography.com/content/005858-housing-affordability-and-standard-living-the-14th-annual-demographia-international-housing-affordability-survey">top 10</a> of the most unaffordable cities worldwide. But they have been dealt a weak hand – Australia has a <a href="http://www.abs.gov.au/AUSSTATS/abs@.nsf/mf/3101.0">population growth</a> of 1.6% per year, of which more than 60% came from immigration. Immigrants are often seen as outsiders, and so they tend to increase the power of vested interests.</p>
+
+                <p>In the face of these headwinds, Australia managed to come up with a <a href="https://theconversation.com/foreign-ownership-of-housing-how-do-australia-and-new-zealand-compare-87089">reasonably good policy</a> that satisfies vested interests. They banned foreign ownership of existing housing stock, but not ownership of new housing stock. This meant that the demand for housing was <a href="https://theconversation.com/why-chinese-investors-find-australian-real-estate-so-alluring-76310">channeled into building new homes</a>. Because these are seen by existing homeowners as separate markets, they largely accept the new construction. This means that Australian cities do not need to compete with each other to restrict housing supply.<sup><a href="#fn9" id="ref9" class="footnote-ref">[9]</a></sup></p>
+                
+                <h2 id="solutions">New solutions</h2>
+                
+                <p>The value of brainstorming is that it reveals additional ways of achieving our goals. If we only thought along the lines of vested interests, we would look for ways to overpower the vested interests. That's a direct but obvious route, and we'd expect the vested interests to be well prepared and have a high <a href="https://en.wikipedia.org/wiki/Force_multiplication">force multiplier</a> working in their favor.</p>
+
+                <p>But using the relative gains concept, we can think of different solutions. We could try to move the group competition up a level, so that the entire Bay Area is competing with rival conurbations.<sup><a href="#fn10" id="ref10" class="footnote-ref">[10]</a></sup> Another approach would be to increase the power of rivals, which will force more cooperation on the Bay Area level.<sup><a href="#fn11" id="ref11" class="footnote-ref">[11]</a></sup></p>
+
+                <p>There are many other effective approaches for increasing housing supply in the Bay Area; the specific policies and implementations aren't important. What's important is that in order to come up with these solutions, we need to know which frameworks are appropriate to apply, and to have enough familiarity with them to look beyond the surface level and come up with new possibilities.</p>
+                
+                <h2 id="generalizing">Generalizing</h2>
+                
+                <p>We can improve our decision-making by taking this example and transforming it into a general mindset. There are three important questions to resolve when we do this:</p>
+                <ul>
+                    <li>How can we know how deep our understanding is – are we suffering from the <a href="https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect">Dunning-Kruger effect</a>?</li>
+                    <li>When can we know which frameworks are appropriate to apply to a particular situation?</li>
+                    <li>How can we increase our understanding of our various frameworks to a level where they add value?</li>
+                </ul>
+                
+                <p>The conventional approach is to read a lot, and to talk to a lot of knowledgeable people in each field. Not surprisingly, this is so difficult to do that the average level of decision-making is quite poor. Few people have the stamina or inclination to regularly read a large quantity of material, and fewer still have the contacts or skills to talk with the experts in each field.</p>
+
+                <p>There is another approach, a difficult shortcut which turbocharges our understanding and decision-making quality. I'll be describing this technique, which I call the "four corner cactus", in my <a href="https://brianlui.dog/four-corner-cactus/">next article</a>.</p>
+
+                <hr>
+
+                <div class="footnotes">
+                    <p id="fn1"><a href="#ref1" class="footnote-backref">1 ↩</a> I believe remote working and other technological solutions are unlikely to materially reduce the benefits to agglomeration. There is too much value embedded in face-to-face interaction, networks, and serendipitous encounters.</p>
+                    <p id="fn2"><a href="#ref2" class="footnote-backref">2 ↩</a> Vested interests are also studied as <a href="https://knowledgeproblem.com/2010/10/17/concentrated-benefits-and-dispersed-costs/">concentrated benefits and dispersed costs</a>, <a href="https://www.henrygeorgefoundation.org/the-science-of-economics/economic-rent.html">economic rents</a>, and <a href="https://www.economicshelp.org/blog/141040/economics/regulatory-capture/">regulatory capture</a>.</p>
+                    <p id="fn3"><a href="#ref3" class="footnote-backref">3 ↩</a> It's not necessary to achieve mastery in every field. What's important is to be able to generate actionable ideas that go beyond the level of superficial understanding.</p>
+                    <p id="fn4"><a href="#ref4" class="footnote-backref">4 ↩</a> "Last year, Brisbane hired a consultant who found that the city would net $1 million a year in tax revenue by approving the Baylands. But if the city instead approved a project with lots more commercial space, a larger hotel and no housing, Brisbane would gain $9 million annually — an amount equivalent to more than half the city's current day-to-day operating budget."</p>
+                    <p id="fn5"><a href="#ref5" class="footnote-backref">5 ↩</a> Commonly called <a href="https://www.washingtonpost.com/news/monkey-cage/wp/2018/07/27/five-things-i-learned-about-envy-in-politics/">envy</a>, although relative gains encompasses more than just envy.</p>
+                    <p id="fn6"><a href="#ref6" class="footnote-backref">6 ↩</a> In modern times, another example of neglecting relative gains is being in favor of unrestricted free trade, by unilaterally reducing tariffs.</p>
+                    <p id="fn7"><a href="#ref7" class="footnote-backref">7 ↩</a> This holds for any payoffs where the reward to other cities is higher than the reward to the city making the housing decision. How brutal zero-sum games are!</p>
+                    <p id="fn8"><a href="#ref8" class="footnote-backref">8 ↩</a> Contra this point, there is a recent policy to <a href="https://www.scmp.com/news/china/policies-politics/article/2125739/shanghai-caps-population-25-million-2035-experts-doubt">restrict the population of the largest cities</a>. But note that this policy is driven from top-down; it's not because of vested interests or relative gains. Also note that some of the larger cities can have near prefecture-level influence.</p>
+                    <p id="fn9"><a href="#ref9" class="footnote-backref">9 ↩</a> They can find <a href="http://www.traveller.com.au/city-rivalry-why-its-time-to-end-the-sydneymelbourne-thing-gy6dmf">plenty of other ways to compete</a>, of course.</p>
+                    <p id="fn10"><a href="#ref10" class="footnote-backref">10 ↩</a> <a href="http://sb827.devonzuegel.com/">SB 827</a> was an attempt to move the group level up, but its line of attack was suboptimal. A more effective line of attack based on moving the group level up exists, but is beyond the scope of this article.</p>
+                    <p id="fn11"><a href="#ref11" class="footnote-backref">11 ↩</a> This relies on a concept from public policy about group-level cooperation, exemplified by the quotation "My brother and I against my cousin; my cousin and I against strangers."</p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        Thanks for reading my blog!
+    </footer>
+</body>
+</html>
