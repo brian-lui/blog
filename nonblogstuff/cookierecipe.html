@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biscoff Hojicha Miso Cookies - Brian Lui's blog</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .unit-toggle {
+            margin: 1em 0;
+        }
+        .unit-btn {
+            padding: 0.3em 0.8em;
+            margin-left: 0.5em;
+            border: 1px solid #ccc;
+            background: #f5f5f5;
+            cursor: pointer;
+        }
+        .unit-btn.active {
+            background: #333;
+            color: #fff;
+            border-color: #333;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -27,18 +44,24 @@
 
                 <h2>Cookie Dough</h2>
 
+                <div class="unit-toggle">
+                    <span>Units:</span>
+                    <button id="metric-btn" class="unit-btn active">Metric</button>
+                    <button id="imperial-btn" class="unit-btn">Imperial</button>
+                </div>
+
                 <h3>Ingredients</h3>
                 <ul>
-                    <li>80 g softened unsalted butter</li>
-                    <li>45 g Biscoff spread</li>
-                    <li>120 g granulated sugar</li>
-                    <li>90 g light brown sugar</li>
+                    <li><span class="measurement" data-metric="80 g" data-imperial="2¾ oz">80 g</span> softened unsalted butter</li>
+                    <li><span class="measurement" data-metric="45 g" data-imperial="1½ oz">45 g</span> Biscoff spread</li>
+                    <li><span class="measurement" data-metric="120 g" data-imperial="4¼ oz">120 g</span> granulated sugar</li>
+                    <li><span class="measurement" data-metric="90 g" data-imperial="3 oz">90 g</span> light brown sugar</li>
                     <li>1 large egg (room temp)</li>
-                    <li>4.5 g hojicha powder</li>
-                    <li>12 g white (shiro) miso</li>
-                    <li>180 g all-purpose flour</li>
-                    <li>1/2 tsp baking soda</li>
-                    <li>1/8 tsp salt</li>
+                    <li><span class="measurement" data-metric="4.5 g" data-imperial="1½ tsp">4.5 g</span> hojicha powder</li>
+                    <li><span class="measurement" data-metric="12 g" data-imperial="2 tsp">12 g</span> white (shiro) miso</li>
+                    <li><span class="measurement" data-metric="180 g" data-imperial="6¼ oz">180 g</span> all-purpose flour</li>
+                    <li><span class="measurement" data-metric="1/2 tsp" data-imperial="1/2 tsp">1/2 tsp</span> baking soda</li>
+                    <li><span class="measurement" data-metric="1/8 tsp" data-imperial="1/8 tsp">1/8 tsp</span> salt</li>
                 </ul>
 
                 <h3>Method</h3>
@@ -54,7 +77,7 @@
 
                 <h2>Baking</h2>
                 <ol>
-                    <li>Set oven to 170C, conventional.</li>
+                    <li>Set oven to <span class="measurement" data-metric="170°C" data-imperial="340°F">170°C</span>, conventional.</li>
                     <li>Bake 13 minutes. Pull when edges are set, centre soft, tops matte, not glossy</li>
                     <li>Cool on tray 5 min, then rack.</li>
                 </ol>
@@ -67,5 +90,22 @@
     <footer>
         Thanks for reading my blog!
     </footer>
+
+    <script>
+        const metricBtn = document.getElementById('metric-btn');
+        const imperialBtn = document.getElementById('imperial-btn');
+        const measurements = document.querySelectorAll('.measurement');
+
+        function setUnits(unit) {
+            measurements.forEach(el => {
+                el.textContent = el.dataset[unit];
+            });
+            metricBtn.classList.toggle('active', unit === 'metric');
+            imperialBtn.classList.toggle('active', unit === 'imperial');
+        }
+
+        metricBtn.addEventListener('click', () => setUnits('metric'));
+        imperialBtn.addEventListener('click', () => setUnits('imperial'));
+    </script>
 </body>
 </html>

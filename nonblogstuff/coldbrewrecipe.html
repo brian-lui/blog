@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cold Brew Concentrate Recipe - Brian Lui's blog</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .unit-toggle {
+            margin: 1em 0;
+        }
+        .unit-btn {
+            padding: 0.3em 0.8em;
+            margin-left: 0.5em;
+            border: 1px solid #ccc;
+            background: #f5f5f5;
+            cursor: pointer;
+        }
+        .unit-btn.active {
+            background: #333;
+            color: #fff;
+            border-color: #333;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -27,16 +44,22 @@
 
                 <h2>Ingredients</h2>
 
+                <div class="unit-toggle">
+                    <span>Units:</span>
+                    <button id="metric-btn" class="unit-btn active">Metric</button>
+                    <button id="imperial-btn" class="unit-btn">Imperial</button>
+                </div>
+
                 <ul>
-                    <li>100 g coffee beans</li>
-                    <li>800 ml water</li>
+                    <li><span class="measurement" data-metric="100 g" data-imperial="3½ oz">100 g</span> coffee beans</li>
+                    <li><span class="measurement" data-metric="800 ml" data-imperial="27 fl oz">800 ml</span> water</li>
                 </ul>
 
                 <h2>Method</h2>
                 <ol>
-                    <li>Coarsely grind the coffee beans. Put the ground coffee into a glass jar, at least 1.5 litre capacity.</li>
-                    <li>Add 800 ml of room temperature water.</li>
-                    <li>Let stand at room temperature for 12 hours. Note: anywhere from 8-16 hours is okay. Room temperature tested for 10°C to 25°C.</li>
+                    <li>Coarsely grind the coffee beans. Put the ground coffee into a glass jar, at least <span class="measurement" data-metric="1.5 litre" data-imperial="1½ quart">1.5 litre</span> capacity.</li>
+                    <li>Add <span class="measurement" data-metric="800 ml" data-imperial="27 fl oz">800 ml</span> of room temperature water.</li>
+                    <li>Let stand at room temperature for 12 hours. Note: anywhere from 8-16 hours is okay. Room temperature tested for <span class="measurement" data-metric="10°C to 25°C" data-imperial="50°F to 77°F">10°C to 25°C</span>.</li>
                     <li>Use paper filters to decant the concentrate from the coffee residue and oil.</li>
                 </ol>
             </div>
@@ -46,5 +69,22 @@
     <footer>
         Thanks for reading my blog!
     </footer>
+
+    <script>
+        const metricBtn = document.getElementById('metric-btn');
+        const imperialBtn = document.getElementById('imperial-btn');
+        const measurements = document.querySelectorAll('.measurement');
+
+        function setUnits(unit) {
+            measurements.forEach(el => {
+                el.textContent = el.dataset[unit];
+            });
+            metricBtn.classList.toggle('active', unit === 'metric');
+            imperialBtn.classList.toggle('active', unit === 'imperial');
+        }
+
+        metricBtn.addEventListener('click', () => setUnits('metric'));
+        imperialBtn.addEventListener('click', () => setUnits('imperial'));
+    </script>
 </body>
 </html>
